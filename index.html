@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Balloons game</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+  <div class="wrapper">
+    <div class="counter">
+      <p>You popped <span class="balloon-counter">0</span> balloons</p>
+    </div>
+  </div>
+  <div class="window-shadow">
+    <div class="game-modal">
+      <div class="game-modal-wrapper win">
+        <h4>Congratulations!</h4>
+        <img src="images/happy.png" alt="win">
+        <h4>You're a champ!</h4>
+        <p>You popped all <span class="win-condition">0</span> balloons!</p>
+      </div>
+      <div class="game-modal-wrapper lose">
+        <h4>Sorry!</h4>
+        <img src="images/sad.png" alt="lose">
+        <h4>You popped <span class="balloon-counter">0</span> balloons</h4>
+        <p>Do you want to play again?</p>
+        <button type="button" class="restart">Yes</button>
+        <button type="button" class="cancel">No</button>
+      </div>
+    </div>
+  </div>
+</main>
+<audio src="sounds/bg-music.mp3" autoplay loop></audio>
+<script src="js/script.js"></script>
+</body>
+</html>

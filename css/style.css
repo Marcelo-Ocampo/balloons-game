@@ -1,0 +1,74 @@
+body{
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  color: black;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+.counter{
+  background-color: #efefef;
+  padding: 10px 50px;
+  border-radius: 10px  10px 0 0;
+}
+.balloon{
+  width: 120px;
+  height: 200px;
+  position: absolute;
+  top: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.balloon-red{
+  background-image: url(../images/balloon-red.png);
+}
+.balloon-yellow{
+  background-image: url(../images/balloon-yellow.png);
+}
+.balloon-blue{
+  background-image: url(../images/balloon-blue.png);
+}
+.balloon-violet{
+  background-image: url(../images/balloon-fiolet.png);
+}
+.balloon-green{
+  background-image: url(../images/balloon-green.png);
+}
+.window-shadow{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+
+  display: none; /* Should be flex on game over */
+}
+.game-modal{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.game-modal-wrapper{
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 100px 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8)
+}
+.win, .lose{
+  position: absolute;
+  display: none; /* Should be block on game over */
+}
